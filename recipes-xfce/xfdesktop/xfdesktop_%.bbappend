@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRC_URI:append = " file://0001-Description-of-the-changes.patch \
+SRC_URI:append = " file://0001-Added-Adlink-wallpaper.patch \
 		   file://adlink.jpg \
 		   file://0002-Adlink-Default-JPG-file.patch \	
 "
