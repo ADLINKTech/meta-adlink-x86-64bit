@@ -1,0 +1,34 @@
+From fef549a282cb47620f14ece7e680491816f14fbf Mon Sep 17 00:00:00 2001
+From: Rahul <rahul.raja@adlinktech.com>
+Date: Mon, 5 Aug 2024 14:43:24 +0530
+Subject: [PATCH 2/2] Applying patch
+ "https://patchwork.kernel.org/project/netdevbpf/patch/20230623085920.12904-1-kumari.pallavi@intel.com/#25424739"
+ from intel
+
+---
+ drivers/net/can/m_can/m_can.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/net/can/m_can/m_can.c b/drivers/net/can/m_can/m_can.c
+index 4fbba6c33641..d42f3770af83 100644
+--- a/drivers/net/can/m_can/m_can.c
++++ b/drivers/net/can/m_can/m_can.c
+@@ -1107,6 +1107,7 @@ static irqreturn_t m_can_isr(int irq, void *dev_id)
+ 			if (m_can_echo_tx_event(dev) != 0)
+ 				goto out_fail;
+ 
++			m_can_write(cdev, M_CAN_IE, IR_ALL_INT & ~(IR_TEFN));
+ 			can_led_event(dev, CAN_LED_EVENT_TX);
+ 			if (netif_queue_stopped(dev) &&
+ 			    !m_can_tx_fifo_full(cdev))
+@@ -1771,6 +1772,7 @@ static netdev_tx_t m_can_start_xmit(struct sk_buff *skb,
+ 		}
+ 	} else {
+ 		cdev->tx_skb = skb;
++		m_can_write(cdev, M_CAN_IE, IR_ALL_INT & (IR_TEFN));
+ 		return m_can_tx_handler(cdev);
+ 	}
+ 
+-- 
+2.34.1
+
