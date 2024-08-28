@@ -24,8 +24,8 @@ DISTRO_FEATURES:append = " tpm"
 
 IMAGE_INSTALL:append = " tpm2-tools tpm2-tss tpm2-abrmd"
 
-IMAGE_INSTALL:append = " bmap-tools"
-IMAGE_INSTALL:append = " devmem2"
+IMAGE_INSTALL:append = " bmaptool"
+IMAGE_INSTALL:append = " devmem2 xfce4-startup"
 #Tools
 
 # Test Tools
