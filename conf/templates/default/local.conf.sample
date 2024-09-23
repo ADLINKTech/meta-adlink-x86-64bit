@@ -26,7 +26,7 @@ IMAGE_INSTALL:append = " tpm2-tools tpm2-tss tpm2-abrmd"
 
 IMAGE_INSTALL:append = " bmaptool"
 IMAGE_INSTALL:append = " devmem2"
-IMAGE_INSTALL:append = " libgpiod-tools xfce4_startup"
+IMAGE_INSTALL:append = " libgpiod-tools xfce4-startup"
 IMAGE_FSTYPES = "wic.bz2 wic.bmap"
 
 #Tools
