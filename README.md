@@ -1,9 +1,9 @@
-# Mickledore 
+# Scarthgap 
 
-- Kernel version: 6.1.59
+- Kernel version: 6.6
 - Released year: 2024
 - Kernel support by Adlink(continuing).
-- Manifest of the Yocto BSP is [here](https://github.com/ADLINK/adlink-manifest/tree/intel-yocto-mickledore).
+- Manifest of the Yocto BSP is [here](https://github.com/ADLINK/adlink-manifest/tree/intel-yocto-scarthgap).
 
 
 
@@ -12,12 +12,12 @@
 
 | **meta name**         | **Branch** | **commit version**                       |
 | :-------------------- | :--------- | :--------------------------------------- |
-| Poky                  | Mickledore  | 7235399a86b134e57d5eb783d7f1f57ca0439ae5 |
-| meta-openembedded     | Mickledore  | aa5e8edabbc414d8ec1b2ad63c8743c7baf99626 |
-| meta-intel            | Mickledore  | e63d672fedd1328ebd6d0a2632f8bef35598eb21 |
-| meta-adlink-x86-64bit | Mickledore  | 157aa02425a18180df50d85033f5583061805692 |
-| meta-security         | Mickledore  | d7db0a3bd1a8639df7570483f003ce00cbe274a2 |
-| meta-virtualization   | Mickledore  | b8db7002764712f2902fe9dea098c171b1128076 |
+| Poky                  | scarthgap  | 6ced2e7ca3b58130154035ad61685cd222909680 |
+| meta-openembedded     | scarthgap  | 2338409efc51cf2022ff5610a9fb689251706e2b |
+| meta-intel            | scarthgap  | d172a00f487a8ea4391b96e0f6cef5279c5a07d7 |
+| meta-adlink-x86-64bit | scarthgap  | 5a140bf2df5a442fcb4164f5ecfa4d97f589eb37 |
+| meta-security         | scarthgap  | 11ea91192d43d7c2b0b95a93aa63ca7e73e38034 |
+| meta-virtualization   | scarthgap  | 54b806b1985f3989722ee308e1073530fe3328c1 |
 
 
 
