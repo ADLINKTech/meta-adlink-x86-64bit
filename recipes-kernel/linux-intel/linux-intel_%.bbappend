@@ -1,6 +1,7 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 SRC_URI:append = "  file://adlink-x86-kmeta;type=kmeta;destsuffix=/adlink-x86-kmeta \
-"		    
+		    file://0001-Added-i2c-i801-support-for-sema.patch \
+"
 KERNEL_FEATURES:append:x86-64 = " adlink.scc"
 
 #SRCREV_machine = "${AUTOREV}"
